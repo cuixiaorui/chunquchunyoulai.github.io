@@ -1,0 +1,11 @@
+language: something
+install:
+  - npm install
+script:
+  - make check
+  - make generate
+after_success:
+  - bash deploy.sh
+env:
+  global:
+    - secure: "gxaMGlvh60GSsgJl1icb02cf6laiuDL0MV1ONgjso4R6n5OaMOzWS/i5FheCMnrG1A82zhDc5brdVQv1DklkrXSIZgM2GNZo4Y9LnczJqstXRgDo4Sz1c0Yn2lSwGOjG2yVhFuQdmS19NTbKzIJiEF6B9qqmcU+x1uEUELbj7NnGsPPfrunCrLUoDVuTYfTsD7h8uwyUusepoLAsHrD+w/o1xre3Oe1Z6IF4Fngz/coWOPGCM65J/9ICaesPU5fwUKTZiKsq2ntVo4qQYaWou8nG4zUMMLXwmclypvfKLPUAXCuyIOSUKV+CfB0oH0FP1iNu9j3ZSYZEu1TpS8opMyLjpb78lY5uGfmPnSR/TijJguES55ofWaEPnlBvZ+U409dplQph1/Vt9L6RDMKknJ5nq5D4NwvZwGBGb0+yEgaX/SXHQVNknpxx+RL3/y7dQ75wYzU81AekMjJSmtoKG04KQs2pSUGoXeTBHfLFB0ChrN6MMIjVfMrLNkK/taFgFdhJ8vJaaYXOR9j6EBQAu3Soe6I7LaNUhscqvr7ol8uAeSFlOzfcbKDGG/PTC7EQ40BtDgDACjRJmm8wggzN2D+YtHHZcOFk8ZTSDUIVVXS7XWro82tvUVvMp4BMk8zpU1K2DDTQ4KwrlJUGSecV4PsCuDnuJL3G2ZXJAu9ADTU="
